@@ -10,6 +10,7 @@ A hands-on sample project demonstrating how to use [LlamaIndex](https://github.c
 - **Web Scraping:** Scrapes and indexes content from web pages (Wikipedia, tech news, etc.).
 - **Vector Indexing:** Creates a searchable vector index from documents.
 - **Interactive Chatbot:** Query your indexed content via a simple chat interface.
+- **REST API:** Full FastAPI implementation with comprehensive endpoints.
 - **Minimal Example:** Start with a basic, no-scraping example for quick testing.
 
 ---
@@ -21,8 +22,11 @@ llamaindex-sample/
 ├── main.py                 # Basic LlamaIndex example (Wikipedia scraping)
 ├── web_scraper_example.py  # Advanced web scraping with chatbot
 ├── simple_example.py       # Minimal example (no web scraping)
+├── api_server.py           # FastAPI REST API server
+├── api_client_example.py   # API client example and testing
 ├── requirements.txt        # Python dependencies
 ├── env_example.txt         # Environment variables template
+├── API_DOCUMENTATION.md    # Comprehensive API documentation
 └── README.md               # Project documentation
 ```
 
@@ -88,6 +92,22 @@ python web_scraper_example.py
 ```
 - Scrapes tech news sites, analyzes content, creates a vector index, and launches an interactive chatbot.
 
+### REST API Server
+
+```bash
+python api_server.py
+```
+- Starts a FastAPI server with comprehensive REST endpoints for RAG operations.
+- Access interactive docs at: http://localhost:8000/docs
+
+### API Client Testing
+
+```bash
+python api_client_example.py
+```
+- Tests all API endpoints with sample data.
+- Interactive mode: `python api_client_example.py --interactive`
+
 ---
 
 ## 🔧 Configuration
@@ -148,6 +168,8 @@ Try these when running the chatbot or query scripts:
 
 - [LlamaIndex Documentation](https://docs.llamaindex.ai/)
 - [OpenAI API Documentation](https://platform.openai.com/docs)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [API Documentation](./API_DOCUMENTATION.md) - Complete API reference
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/)
 
 ---
